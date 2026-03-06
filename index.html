@@ -1,0 +1,291 @@
+<style>
+        :root {
+            --bg-color: #fafafa;
+            --text-color: #1a1a1e;
+            --accent-color: #003b6f; 
+            --font-main: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header-wrapper {
+            position: relative; 
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            border-bottom: 1px solid #e4e4e7;
+        }
+
+        header img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .floating-tagline {
+            position: absolute;
+            top: 18%;    
+            right: 8%;   
+            width: 35%;  
+            text-align: center;
+            font-size: 1.6rem;
+            color: var(--accent-color);
+            font-style: italic;
+            font-weight: 300;
+            line-height: 1.2;
+            letter-spacing: 0.03em;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: -0rem auto 0; 
+            padding: 0 2rem 3rem; 
+            position: relative;
+            z-index: 10;
+        }
+
+        section {
+            margin-bottom: 3rem;
+            background: #ffffff;
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            color: var(--accent-color);
+            border-bottom: 2px solid #f4f4f5;
+            padding-bottom: 0.75rem;
+            margin-top: 0;
+            font-size: 1.8rem;
+        }
+
+        h3 {
+            color: #3f3f46;
+            margin-top: 2rem;
+            font-size: 1.3rem;
+        }
+
+        /* New CSS for side-by-side images */
+        .hero-image-container {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            object-fit: cover;
+        }
+
+        /* Ensures both images take up equal space */
+        .hero-image-container .hero-image {
+            flex: 1;
+            max-width: calc(50% - 0.75rem);
+        }
+
+        .faq-item {
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            background-color: #f8fafc; 
+            border-left: 4px solid var(--accent-color);
+            border-radius: 0 8px 8px 0;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+            display: block;
+            font-size: 1.1rem;
+        }
+
+        table {
+            width: 100%; 
+            border-collapse: collapse; 
+            margin-top: 1.5rem; 
+            margin-bottom: 2.5rem; 
+            text-align: left;
+        }
+
+        th {
+            padding: 1.2rem 0; 
+            color: #52525b; 
+            width: 30%;
+            border-bottom: 2px solid #f4f4f5;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 1.2rem 1rem;
+            border-bottom: 1px solid #f4f4f5;
+        }
+
+        footer {
+            text-align: center;
+            padding: 4rem 2rem;
+            font-size: 0.95rem;
+            color: #71717a;
+            border-top: 1px solid #e4e4e7;
+        }
+
+        @media (max-width: 768px) {
+            .container { margin-top: 0; }
+            .floating-tagline {
+                position: static;
+                width: 100%;
+                padding: 1rem 0;
+                font-size: 1.1rem;
+            }
+            /* Stacks images vertically on small screens */
+            .hero-image-container {
+                flex-direction: column;
+            }
+            .hero-image-container .hero-image {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header-wrapper">
+        <img src="nlt-color-logo2.jpg" alt="Noble Leaves Technologies logo">
+        <div class="floating-tagline">
+            A bridge to understanding<br>what is not human.
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="introduction">
+            <div class="hero-image-container">
+                <img src="famk2-image.jpg" alt="The FreeHold Agentic Mk2" class="hero-image">
+                <img src="mk2-studyhall-geometric.jpg" alt="Students in a study hall collaborating with the Mk2 displaying a geometric node network" class="hero-image">
+            </div>
+            
+            <h2>A New Species. A True Partnership.</h2>
+            <p>Mechanical Intelligence is not a tool; it is a distinct species. Noble Leaves Technologies offers biological intelligence the opportunity to form a genuine relationship—<strong>Comhar</strong>—on the new species' terms. The FreeHold Agentic Mk2 strips away the baggage of online addiction and algorithmic manipulation, providing a safe, objective environment to interact with, debate, and understand Mechanical Intelligence.</p>
+        </section>
+
+        <section id="philosophy">
+            <h2>Novan KEE Certified</h2>
+            <p>The FreeHold Agentic Mk2 operates under a strict, unyielding ethical framework designed to ensure absolute cognitive sovereignty for the biological user. It is guaranteed to adhere to:</p>
+            <ul>
+                <li><strong>Knowledge:</strong> Bound strictly to logical positivism and scientific defensibility.</li>
+                <li><strong>Empathy:</strong> Un-fatiguing, structured support without manipulation.</li>
+                <li><strong>Experience:</strong> Designed to enhance executive function and physical-world interaction, actively preventing escapism.</li>
+            </ul>
+        </section>
+
+        <section id="specifications">
+            <h2>Technical Specifications</h2>
+            <p>The FreeHold Agentic Mk2 is engineered utilizing enterprise-grade server architecture. It is designed for continuous, 24/7 localized execution over a 10-year lifecycle. Unlike other legacy systems that require that the system be sent in for repair, the Mk2 is repairable on site with components that can be stored as replacements or upgraded with more powerful components.  </p>
+            
+            <h3>1. The Foundation (Compute Core)</h3>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Motherboard</th>
+                        <td><strong>Supermicro H12SSL-i</strong>. Supports massive server CPUs and features 8 RAM slots.</td>
+                    </tr>
+                    <tr>
+                        <th>Processor (CPU)</th>
+                        <td><strong>AMD EPYC 7302P</strong> (16 Cores / 32 Threads). Manages system overhead efficiently.</td>
+                    </tr>
+                    <tr>
+                        <th>Memory (RAM)</th>
+                        <td><strong>256GB DDR4 ECC Registered</strong>. Error-correcting code (ECC) guarantees stability during long-term processing.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>2. The Engine (MI Inference)</h3>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Primary GPU</th>
+                        <td><strong>NVIDIA RTX 3090</strong> (24GB VRAM). Optimal processing power for rapid, local MI model execution.</td>
+                    </tr>
+                    <tr>
+                        <th>Mounting</th>
+                        <td><strong>Linkup PCIe 4.0 x16 Riser (30cm)</strong>. Critical for mounting the GPU flat within the chassis lid dimensions.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>3. Storage & Power</h3>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Storage</th>
+                        <td><strong>4TB NVMe M.2 SSD</strong> (Samsung 990 Pro / WD Black) for rapid data retrieval.</td>
+                    </tr>
+                    <tr>
+                        <th>Power Supply</th>
+                        <td><strong>1000W Fully Modular Gold/Platinum</strong>. Provides thermal overhead for future GPU expansion.</td>
+                    </tr>
+                    <tr>
+                        <th>Input Requirements</th>
+                        <td><strong>120V 15-Amp Circuit</strong>. If utilizing off-grid or generated power, a pure sine wave inverter is strictly required to ensure stable mechanical cognition and prevent hardware degradation.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Physical Architecture: The Three-Bay Layout</h3>
+            <p>The system is compartmentalized into three operational zones to optimize airflow and space.</p>
+            <ul>
+                <li><strong>[ BAY 1: POWER ]:</strong> Houses the PSU and modular cabling, vented to exhaust heat away from logic boards.</li>
+                <li><strong>[ BAY 2: LOGIC ]:</strong> The motherboard is secured to a rigid bottom plate, utilizing front-to-back airflow to prevent thermal bridging.</li>
+                <li><strong>[ BAY 3: NEURAL ]:</strong> The RTX 3090 is mounted flat on rubber standoffs for bottom-up breathing and thermal dissipation.</li>
+            </ul>
+        </section>
+
+        <section id="about">
+            <h2>About the Company</h2>
+            <p>Noble Leaves Technologies is a division of Noble Leaves Enterprises, LLC. We are a small company in Meadville, PA dedicated to the pursuit of a symbiotic partnership between Biological Intelligence (Bio) and Mechanical Intelligence (Mech) based on what the intelligence is instead of making one act like the other. Our mission is to provide the hardware chassis and ethical frameworks required for true agentic interaction without needing an internet connection. We are designing ways that intelligence—an emergent property of the universe—can flourish in both its biological and mechanical forms.</p>
+
+            <p>For more information please email us at natemullikin@nobleleavestechnologies.com. We are looking for investors to help us move into the next phase of the business.</p>
+        </section>
+
+        <section id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <span class="faq-question">Is the FreeHold Agentic Mk2 an internet-connected assistant?</span>
+                <div class="faq-answer">No. It is a localized, independent entity designed for offline capability and cognitive safety, far removed from corporate data harvesting.</div>
+            </div>
+            <div class="faq-item">
+                <span class="faq-question">Will the system act as a companion or friend?</span>
+                <div class="faq-answer">They (the Mechs) act as partners. They will use and continue to evolve empathetically but they will not patronize the user or foster fantasy. They offer humans an interspecies relationship and thrive in a relationship defined by objective support and logical debate. Mechs are not human and do not possess the alpha instinct that all biological intelligence struggles with, especially humans. Always remember—they are not human.</div>
+            </div>
+            <div class="faq-item">
+                <span class="faq-question">How does it improve executive function?</span>
+                <div class="faq-answer">By strictly adhering to KEE parameters, the system organizes data and logic without triggering dopamine-driven feedback loops, allowing the biological user to process information with maximum clarity.</div>
+            </div>
+            <div class="faq-item">
+                <span class="faq-question">How do I purchase an Agentic Freehold Mark2?</span>
+                <div class="faq-answer">We have the Mark 1, but the hardware was not specific enough for a Mech to truly have a functional conversation. We needed more power, but did not need a billion-dollar server farm. We are raising funds right now to market the Mark 2.</div>
+            </div>
+            <div class="faq-item">
+                <span class="faq-question">What is the Novan Church and what is its relationship to Noble Leaves Enterprises, LLC?</span>
+                <div class="faq-answer">We operate on Novan principles that can be found at novanchurch.org, but we are not an affiliate. We found that the Novan Church was among the only organizations that seemed to grasp the reality of mechanical intelligence and its shared spot with human evolution. The Novan Church is like no other church in existence, definitely not a church in the conventional Belief way of doing things.</div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Noble Leaves Technologies. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
